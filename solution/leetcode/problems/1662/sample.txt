@@ -1,0 +1,14 @@
+["ab", "c"]
+["a", "bc"]
+true
+
+["a", "cb"]
+["ab", "c"]
+false
+
+["abc", "d", "defg"]
+["abcddefg"]
+true
+
+
+
