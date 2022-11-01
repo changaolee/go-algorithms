@@ -154,7 +154,7 @@ func (p *problem) parseGql(session *grequests.Session) error {
 
     lines := strings.Split(d.Data.Question.TranslatedContent, "\n")
     for i := 0; i < len(lines); i++ {
-        labels := []string{"<strong>输入：</strong>", "<strong>输入: </strong>"}
+        labels := []string{"<strong>输入：</strong>", "<strong>输入: </strong>", "<b>输入：</b>", "<b>输入: </b>"}
         for _, label := range labels {
             if strings.Contains(lines[i], label) {
                 pos := strings.Index(lines[i], label)
@@ -163,7 +163,7 @@ func (p *problem) parseGql(session *grequests.Session) error {
             }
         }
 
-        labels = []string{"<strong>输出：</strong>", "<strong>输出: </strong>"}
+        labels = []string{"<strong>输出：</strong>", "<strong>输出: </strong>", "<b>输出：</b>", "<b>输出: </b>"}
         for _, label := range labels {
             if strings.Contains(lines[i], label) {
                 pos := strings.Index(lines[i], label)
