@@ -1,0 +1,14 @@
+"ababc"
+"ab"
+2
+
+"ababc"
+"ba"
+1
+
+"ababc"
+"ac"
+0
+
+
+
